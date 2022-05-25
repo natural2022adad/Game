@@ -1,5 +1,7 @@
 package game;
 
+import java.util.Random;
+
 public class Cleric 
 {
 	
@@ -17,7 +19,7 @@ public class Cleric
 	
 	public int pray(int sec) 
 	{
-		int r = new java.util.Random().nextInt(3);
+		int r = new Random().nextInt(3);
 		System.out.println(r);
 		int p = (sec + r);
 		System.out.println(p);
