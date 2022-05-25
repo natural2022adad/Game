@@ -11,7 +11,7 @@ public class Cleric
 	int max_mp = 10;
 	public void selfAid() 
 	{
-		this.mp -= 5;
+		this.mp -= 3;
 		this.hp = this.max_hp;
 	}
 	

@@ -48,8 +48,10 @@ public class Main
 		a1.beer();
 		
 		Cleric c1 = new Cleric();
+		c1.name = "はるき";
 		c1.hp = 15;
-		c1.mp = 6;
+		c1.mp = 10;
+		System.out.println("こんにちは私は聖職者" + c1.name + "だよ");
 		System.out.println(c1.hp);
 		c1.selfAid();
 		int r = new java.util.Random().nextInt(3);
