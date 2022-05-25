@@ -47,6 +47,15 @@ public class Main
 		a1.na = 1.0;
 		a1.beer();
 		
+		Cleric c1 = new Cleric();
+		c1.hp = 15;
+		c1.mp = 6;
+		System.out.println(c1.hp);
+		c1.selfAid();
+		int r = new java.util.Random().nextInt(3);
+		c1.pray(r);
+		System.out.println(c1.hp);
+		System.out.println(c1.mp);
 		
 	}
 
