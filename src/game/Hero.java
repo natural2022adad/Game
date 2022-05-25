@@ -9,7 +9,7 @@ public class Hero
 	//メソッド
 	public void sleep() //動詞にする	sleep
 	{ 
-		this.hp = 100; //各それぞれの値
+		this.hp = 1000; //各それぞれの値
 		System.out.println(this.name + "は、眠って回復した");
 	}
 	

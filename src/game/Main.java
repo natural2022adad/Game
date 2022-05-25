@@ -38,6 +38,16 @@ public class Main
 		System.out.println(h.hp);
 		System.out.println(m.hp);
 		
+		Matango m3 = new Matango();
+		m3.hp = 80;
+		m3.Suffix = 'C';
+		
+		Adachan a1 = new Adachan();
+		a1.hp = 1;
+		a1.na = 1.0;
+		a1.beer();
+		
+		
 	}
 
 }
