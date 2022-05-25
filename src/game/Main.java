@@ -14,7 +14,7 @@ public class Main
 		
 		Hero m = new Hero();
 		
-		m.name = "あだちゃん";
+		m.name = "あだちん";
 		m.hp = 50;
 		
 		Matango m1 = new Matango();

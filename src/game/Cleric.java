@@ -7,29 +7,31 @@ public class Cleric
 	int hp = 50;
 	int mp = 10;
 	
-	int max_hp = 50;
-	int max_mp = 10;
+	final int MAX_HP = 50;
+	final int MAX_MP = 10;
 	public void selfAid() 
 	{
 		this.mp -= 3;
-		this.hp = this.max_hp;
+		this.hp = this.MAX_HP;
 	}
 	
-	public void pray(int sec) 
+	public int pray(int sec) 
 	{
 		int r = new java.util.Random().nextInt(3);
 		System.out.println(r);
 		int p = (sec + r);
 		System.out.println(p);
-		if (this.mp <= 10) 
+		if (this.mp <= MAX_MP) 
 		{
 			this.mp += p; 
-			if (this.mp >= 10) 
+			if (this.mp >= MAX_MP) 
 			{
-				this.mp =10;
+				this.mp = MAX_MP;
 			}
+		
 		}
-	}	
+		return p;
+	}
 
 }
  
