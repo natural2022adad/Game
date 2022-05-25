@@ -55,7 +55,9 @@ public class Main
 		c1.mp = 10;
 		System.out.println("こんにちは私は聖職者" + c1.name + "だよ");
 		System.out.println(c1.hp);
+		
 		c1.selfAid();
+		
 		int r = new Random().nextInt(3);
 		c1.pray(r);
 		System.out.println(c1.hp);

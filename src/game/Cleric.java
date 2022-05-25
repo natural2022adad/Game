@@ -23,16 +23,12 @@ public class Cleric
 		System.out.println(r);
 		int p = (sec + r);
 		System.out.println(p);
-		if (this.mp <= MAX_MP) 
-		{
-			this.mp += p; 
-			if (this.mp >= MAX_MP) 
-			{
-				this.mp = MAX_MP;
-			}
 		
-		}
-		return p;
+		int p1 = Math.min(this.MAX_MP - this.mp, p);
+		System.out.println(p1);
+		this.mp += p1;
+		System.out.println(this.mp);
+		return p1;
 	}
 
 }
