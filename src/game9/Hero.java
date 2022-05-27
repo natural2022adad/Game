@@ -12,9 +12,7 @@ public class Hero {
 		this.age = age;
 	}
 	public Hero() {
-		this.hp = 100;
-		this.name = "名無し";
-		this.age = 20;
+		this("名無し", 20);
 	}
 	
 	public void attack() {
