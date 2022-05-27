@@ -5,9 +5,9 @@ public class Wizard {
 	int hp;
 	int hpup = 10;
 	
-	public void heal (Hero h) {
-		h.hp += hpup;
-		System.out.println(h.name  + "のHPを" + hpup + "回復させた");
+	public void heal (Hero o) {
+		o.hp += hpup;
+		System.out.println(o.name  + "のHPを" + hpup + "回復させた");
 	
 	}
 
