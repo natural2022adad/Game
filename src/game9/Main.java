@@ -6,13 +6,13 @@ public class Main {
 		Sword s = new Sword();
 		s.name = "炎の剣";
 		s.damage = 10;
-		Hero h1 = new Hero("ミナト");
+		Hero h1 = new Hero("ミナト", 35);
 
 		h1.sword = s;
 		System.out.println("現在の武器は" + h1.sword.name);
 		h1.attack();
 		
-		Hero h2 = new Hero("アサカ");
+		Hero h2 = new Hero("アサカ", 25);
 		Wizard w = new Wizard();
 		w.name = "スガワラ";
 		w.hp = 50;
@@ -20,12 +20,12 @@ public class Main {
 		w.heal(h2);
 		w.heal(h2);
 		
-		Hero h = new Hero("アダチん");
+		Hero h = new Hero("アダチん", 41);
 		Hero h4 = new Hero();
-		System.out.println(h.name + "HP" + h.hp);
-		System.out.println(h1.name + "HP" + h1.hp);
-		System.out.println(h2.name + "HP" + h2.hp);
-		System.out.println(h4.name + "HP" + h4.hp);
+		System.out.println(h.name + h.age + "歳HP" + h.hp);
+		System.out.println(h1.name + h1.age + "歳HP" + h1.hp);
+		System.out.println(h2.name + h2.age + "歳HP" + h2.hp);
+		System.out.println(h4.name + h4.age + "歳HP" + h4.hp);
 		
 	}
 
