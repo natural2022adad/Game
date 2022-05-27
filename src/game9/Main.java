@@ -13,7 +13,6 @@ public class Main {
 		h1.attack();
 		
 		Hero h2 = new Hero("アサカ");
-		
 		Wizard w = new Wizard();
 		w.name = "スガワラ";
 		w.hp = 50;
@@ -22,9 +21,11 @@ public class Main {
 		w.heal(h2);
 		
 		Hero h = new Hero("アダチん");
+		Hero h4 = new Hero();
 		System.out.println(h.name + "HP" + h.hp);
 		System.out.println(h1.name + "HP" + h1.hp);
 		System.out.println(h2.name + "HP" + h2.hp);
+		System.out.println(h4.name + "HP" + h4.hp);
 		
 	}
 
